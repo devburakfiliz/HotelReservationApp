@@ -8,7 +8,8 @@ using HotelProject.EntityLayer.Concrete;
 
 namespace HotelProject.BussinessLayer.Abstract
 {
-    public interface IServiceService:IGenericService<Service>
+    public interface IServiceService : IGenericService<Service>
     {
     }
+
 }
