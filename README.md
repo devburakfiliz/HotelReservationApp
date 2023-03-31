@@ -43,3 +43,10 @@
 
 ![Ekran görüntüsü 2023-03-31 113856](https://user-images.githubusercontent.com/110422737/229072013-8ea67857-9c3b-4979-9ce4-003d298cc26e.png)
 
+-- Register Page
+
+![Ekran görüntüsü 2023-03-31 153943](https://user-images.githubusercontent.com/110422737/229122494-fc03cfcb-ab45-4f30-aece-46aa385c0a73.png)
+
+--Login Page
+
+![Ekran görüntüsü 2023-03-31 153943](https://user-images.githubusercontent.com/110422737/229122534-7ea6d164-3f38-49b7-b04a-b26fcb6079c9.png)
