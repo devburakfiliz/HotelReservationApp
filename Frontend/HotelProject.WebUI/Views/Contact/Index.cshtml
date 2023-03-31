@@ -2,7 +2,7 @@
 @{
     Layout = null;
 }
-
+@*Contact Index Sayfası*@
 <!DOCTYPE html>
 <html lang="en">
 @await Component.InvokeAsync("_HeadPartial")
@@ -20,38 +20,30 @@
 
         <!-- Header End -->
         <!-- Carousel Start -->
-        @await Component.InvokeAsync("_SliderPartial")
+        @await Component.InvokeAsync("_ContactCoverPartial")
+
 
         <!-- Carousel End -->
         <!-- Booking Start -->
 
+        @await Html.PartialAsync("/Views/Contact/SendMessage.cshtml")
+
+
         <!-- Booking End -->
         <!-- About Start -->
-        @await Component.InvokeAsync("_AboutUsPartial")
-
         <!-- About End -->
         <!-- Room Start -->
-        @await Component.InvokeAsync("_OurRoomsPartial")
-
         <!-- Room End -->
         <!-- Video Start -->
-        @await Component.InvokeAsync("_TrailerPartial")
-
         <!-- Video Start -->
         <!-- Service Start -->
-        @await Component.InvokeAsync("_ServicesPartial")
-
         <!-- Service End -->
         <!-- Testimonial Start -->
-        @await Component.InvokeAsync("_TestimonialPartial")
-
         <!-- Testimonial End -->
         <!-- Team Start -->
-        @await Component.InvokeAsync("_TeamPartial")
-
         <!-- Team End -->
         <!-- Newsletter Start -->
-        @await Html.PartialAsync("_SubscribePartial")
+        @await Html.PartialAsync("/Views/Default/_SubscribePartial.cshtml")
 
         <!-- Newsletter Start -->
         <!-- Footer Start -->

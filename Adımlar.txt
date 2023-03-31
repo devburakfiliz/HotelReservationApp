@@ -1,3 +1,9 @@
 --Api testi ve swagger
 Temayý ekle
 register- login
+
+Create Trigger GuestDecrease
+On Guests
+After Insert
+As
+Update Abouts Set CustomerCount = CustomerCount-1
