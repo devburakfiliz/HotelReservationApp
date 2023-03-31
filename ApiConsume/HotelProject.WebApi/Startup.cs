@@ -56,6 +56,8 @@ namespace HotelProject.WebApi
             services.AddScoped<IBookingService, BookingManager>();
             services.AddScoped<IBookingDal, EfBookingDal>();
 
+            services.AddScoped<IGuestDal, EfGuestDal>();
+            services.AddScoped<IGuestService, GuestManager>();
 
             services.AddAutoMapper(typeof(Startup));
             //services.AddScoped<>

@@ -50,5 +50,12 @@ namespace HotelProject.WebApi.Controllers
             _aboutService.TUpdate(values);
             return Ok(values);
         }
+        [HttpGet("{id}")]
+        public IActionResult GetStaff(int id)
+        {
+            var values = _aboutService.TGetById(id);
+
+            return Ok(values);
+        }
     }
 }
