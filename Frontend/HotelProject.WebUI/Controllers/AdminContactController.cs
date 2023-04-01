@@ -71,11 +71,43 @@ namespace HotelProject.WebUI.Controllers
 
         public PartialViewResult SideBarAdminContactPartial()
         {
-           return  PartialView();
+            return PartialView();
         }
         public PartialViewResult SideBarAdminContactCategoryPartial()
         {
             return PartialView();
+        }
+        [HttpGet]
+
+        public async Task<IActionResult> MessageDetailsBySendBox(int id)
+        {
+
+            var client = _httpClientFactory.CreateClient();
+            var responseMessage = await client.GetAsync($"http://localhost:12849/api/SendMessage/{id}");
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                var jsonData = await responseMessage.Content.ReadAsStringAsync();
+                var values = JsonConvert.DeserializeObject<GetMessageByIDDto>(jsonData);
+                return View(values);
+            }
+            return View();
+
+        }
+        [HttpGet]
+
+        public async Task<IActionResult> MessageDetailsByInbox(int id)
+        {
+
+            var client = _httpClientFactory.CreateClient();
+            var responseMessage = await client.GetAsync($"http://localhost:12849/api/Contact/{id}");
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                var jsonData = await responseMessage.Content.ReadAsStringAsync();
+                var values = JsonConvert.DeserializeObject<GetMessageByInbox>(jsonData);
+                return View(values);
+            }
+            return View();
+
         }
     }
 }
