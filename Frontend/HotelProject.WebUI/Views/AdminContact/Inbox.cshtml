@@ -15,7 +15,7 @@
                     <div class="email-right-box">
                         <div role="toolbar" class="toolbar">
                             <div class="btn-group">
-                                <button aria-expanded="false"  class="btn btn-dark" type="button">
+                                <button  aria-expanded="false"  class="btn btn-dark" type="button">
                                     Gelen Mesajlar <span class="caret m-l-5"></span>
                                 </button>
                                
@@ -38,7 +38,7 @@
                                             <div class="subject">
                                                 <b class="color-dark">@item.Name :</b>   @item.Message   
                                             </div>
-                                            <div class="date">11:49 am</div>
+                                            <div class="date">@(((DateTime)item.Date).ToString("dd-MMM-yyyy"))</div>
                                         </div>
                                     </a>
 
