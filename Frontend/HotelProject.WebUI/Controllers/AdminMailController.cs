@@ -20,7 +20,7 @@ namespace HotelProject.WebUI.Controllers
         public IActionResult Index(AdminMailViewModel adminMailViewModel)
         {
             MimeMessage mimeMessage = new MimeMessage();
-            MailboxAddress mailboxAddress = new MailboxAddress("MimozaOtelAdmin","dev.burakfiliz@gmail.com"); //Kimden
+            MailboxAddress mailboxAddress = new MailboxAddress("MimozaOtelAdmin", "manisamimozahotel@gmail.com"); //Kimden
             mimeMessage.From.Add(mailboxAddress);
 
             MailboxAddress mailboxAddressTo = new MailboxAddress("User", adminMailViewModel.ReceiverMail);  //Kime
@@ -33,7 +33,7 @@ namespace HotelProject.WebUI.Controllers
             mimeMessage.Subject = adminMailViewModel.Subject;
             SmtpClient client = new SmtpClient();            //using Mailkiti kullandık
             client.Connect("smtp.gmail.com", 587, false);
-            client.Authenticate("dev.burakfiliz@gmail.com", "cbtnirechrdfgxgl");
+            client.Authenticate("manisamimozahotel@gmail.com", "gxlbhihigwtcrnib");
             client.Send(mimeMessage);
             client.Disconnect(true);
             return View();

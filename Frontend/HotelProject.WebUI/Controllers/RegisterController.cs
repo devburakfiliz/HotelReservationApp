@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace HotelProject.WebUI.Controllers
 {
+    [AllowAnonymous]
     public class RegisterController : Controller
     {
         private readonly UserManager<AppUser> _userManager;
