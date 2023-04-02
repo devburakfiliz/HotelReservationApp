@@ -50,3 +50,25 @@
 --Login Page
 
 ![Ekran görüntüsü 2023-03-31 153943](https://user-images.githubusercontent.com/110422737/229122534-7ea6d164-3f38-49b7-b04a-b26fcb6079c9.png)
+
+--Error 404 Page
+
+![Ekran görüntüsü 2023-04-02 111457](https://user-images.githubusercontent.com/110422737/229350312-220fe625-30d0-4607-baeb-00381d660630.png)
+
+--Admin panel
+
+![Ekran görüntüsü 2023-04-02 143249](https://user-images.githubusercontent.com/110422737/229350324-93ef41f6-0f3d-461c-94d3-767032cabe56.png)
+
+--Mail Panel
+
+![Ekran görüntüsü 2023-04-02 143307](https://user-images.githubusercontent.com/110422737/229350336-17de137d-af2f-4c5f-8648-c5291e5d280c.png)
+
+--The Message Sent via the Panel has reached the recipient from gmail
+
+![WhatsApp Image 2023-04-02 at 01 37 45](https://user-images.githubusercontent.com/110422737/229350470-70264f7f-6538-43d2-af37-0c580e6f336e.jpeg)
+
+--DataBase Diagram
+
+![Ekran görüntüsü 2023-04-02 143446](https://user-images.githubusercontent.com/110422737/229350485-964ead73-320f-4c70-9cc6-2ba34438c6ce.png)
+
+
