@@ -9,5 +9,7 @@ namespace HotelProject.BussinessLayer.Abstract
 {
     public interface ISendMessageService : IGenericService<SendMessage>
     {
+        public int TGetContactCount();
+
     }
 }

@@ -5,11 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HotelProject.BussinessLayer.Abstract
+namespace HotelProject.DataAccessLayer.Abstract
 {
-    public interface IContactService :IGenericService<Contact>
+    public interface IMessageCategoryDal :IGenericDal<MessageCategory>
     {
-        public int TGetContactCount();
-
     }
 }
